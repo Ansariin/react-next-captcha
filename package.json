@@ -1,14 +1,29 @@
 {
   "name": "react-next-captcha",
-  "version": "1.1.1",
-  "description": "A customizable captcha package",
+  "version": "1.1.2",
+  "description": "A customizable captcha package for use with Next.js and React.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["nextjs-captcha","reactjs-catpcha","secure-captcha","captcha", "security", "verification"],
+  "keywords": [
+    "nextjs-captcha",
+    "reactjs-captcha",
+    "secure-captcha",
+    "captcha",
+    "security",
+    "verification"
+  ],
   "author": "AnsariIn",
   "license": "ISC",
+  "homepage": "https://github.com/AnsariIn/react-next-captcha#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnsariIn/react-next-captcha.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnsariIn/react-next-captcha/issues"
+  },
   "dependencies": {
     "svg-captcha": "^1.4.0",
     "crypto": "^1.0.1"
