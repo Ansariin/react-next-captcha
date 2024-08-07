@@ -127,7 +127,7 @@ npm install react-next-captcha
           fetchCaptcha();
         } else {
           setMessage('Captcha verification failed. Please try again.');
-          fetchCaptcha();
+          //fetchCaptcha();
         }
       };
 

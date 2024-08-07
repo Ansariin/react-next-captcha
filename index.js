@@ -1,22 +1,19 @@
-// index.js
 const generateCaptcha = require('./lib/generateCaptcha');
 const verifyCaptcha = require('./lib/verifyCaptcha');
 
-let captchasData = []; // Ensure captchasData is an array
+let captchasData = [];
 
 function createCaptcha(options = {}, customSalt) {
   const captcha = generateCaptcha(options, customSalt);
 
   if (captchasData.length > 1000) {
-    captchasData = []
+    captchasData = [];
   }
   captchasData.push({ hash: captcha.hash, isUsed: false, salt: customSalt });
   return captcha;
 }
 
 function checkCaptcha(text, hash, customSalt) {
-
-  // Ensure captchasData is still an array
   if (!Array.isArray(captchasData)) {
     return { success: false, message: 'Internal error: captchasData is not an array' };
   }
@@ -28,7 +25,6 @@ function checkCaptcha(text, hash, customSalt) {
       break;
     }
   }
-
 
   if (!captchaDataCheck) {
     return { success: false, message: 'Captcha not found' };
