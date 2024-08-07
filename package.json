@@ -1,0 +1,16 @@
+{
+  "name": "react-next-captcha",
+  "version": "1.1.1",
+  "description": "A customizable captcha package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["nextjs-captcha","reactjs-catpcha","secure-captcha","captcha", "security", "verification"],
+  "author": "AnsariIn",
+  "license": "ISC",
+  "dependencies": {
+    "svg-captcha": "^1.4.0",
+    "crypto": "^1.0.1"
+  }
+}
